@@ -1,4 +1,4 @@
-import  {createProduct, getAllProduct } from "../../../Controllers/productController";
+import  {createProduct, getAllProduct } from "../Controllers/productController";
 import express from "express"
 
 

@@ -3,14 +3,14 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import productRoute from '../typescript-project/Controllers/Routes/productRoute';
-import cartRoute from '../typescript-project/Controllers/Routes/cartRoute'
+import productRoute from '../Routes/productRoute';
+import cartRoute from '../Routes/cartRoute'
 
 dotenv.config();
 
 //connect to mongo db
 
-const MongoDB_connection_string ="mongodb+srv://eddynzobarinda910:makavela123@cluster0.sbzptlt.mongodb.net/?retryWrites=true&w=majority";
+const MongoDB_connection_string ="mongodb+srv://munyeshurimanzi:Munyeshuri1@cluster0.yqd0pr4.mongodb.net/?retryWrites=true&w=majority";
 async function connectToMongoDB(connectionstring: string) {
   await mongoose.connect(connectionstring);
   console.log("connected to the database successfully!");
@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(cors());
 app.use(cookieParser());
-const port = 5500;
+const port = 6000;
 
 //creating product
 
@@ -40,5 +40,6 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port 5500`);
+  console.log(`Server is running on port 3000`);
+  console.log("hi")
 });
