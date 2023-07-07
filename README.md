@@ -1,1 +1,1 @@
-# typescript-level-up-project
+# type-script-challenge
