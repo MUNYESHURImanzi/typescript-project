@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "test": "nodemon --exec ts-node controllers/imageController",
     "start": "node dist/server.js",
     "dev": "nodemon --exec ts-node src/server.ts"
   },
@@ -28,6 +28,8 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongodb": "^5.6.0",
-    "mongoose": "^7.3.1"
+    "mongoose": "^7.3.1",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2"
   }
 }
